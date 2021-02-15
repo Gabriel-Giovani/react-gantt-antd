@@ -94,21 +94,9 @@ function Gantt({
 
   const timebar = [
     {
-      id: 'weeks',
-      title: '',
-      cells: buildWeekCells(),
-      useAsGrid: true,
-    },
-    {
       id: 'months',
       title: 'Meses',
       cells: buildMonthCells(),
-
-    },
-    {
-      id: 'days',
-      title: 'Dias',
-      cells: buildDayCells(),
     }
   ]
 
