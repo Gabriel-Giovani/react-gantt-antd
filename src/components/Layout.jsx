@@ -98,7 +98,7 @@ const Layout = ({ enableSticky, scrollToNow, timebar, sidebarWidth, projects }) 
               className={`rt-sidebar__header ${isSticky ? 'rt-is-sticky' : ''}`}
               style={isSticky ? { width: sidebarWidth } : {}}
             >
-              {timebar.slice(1, 3).map(({ id, title }) => (
+              {timebar.map(({ id, title }) => (
                 <div key={id} className="rt-timebar-key">
                   {title}
                 </div>
@@ -129,7 +129,7 @@ const Layout = ({ enableSticky, scrollToNow, timebar, sidebarWidth, projects }) 
               >
                 <div className="rt-timeline__header-scroll" ref={refScroll} onScroll={isSticky ? handleScrollHeader : noop}>
                   <div ref={refTimebar} style={isSticky ? { width: time.timelineWidthStyle } : {}}>
-                    <Timebar rows={timebar.slice(1, 3)} />
+                    <Timebar rows={timebar} />
                   </div>
                 </div>
               </div>

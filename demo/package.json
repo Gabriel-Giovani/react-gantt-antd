@@ -6,8 +6,8 @@
     "antd": "^3.22.2",
     "react": "link:../node_modules/react",
     "react-dom": "link:../node_modules/react-dom",
-    "react-scripts": "3.0.1",
-    "react-gantt-antd": "link:.."
+    "react-gantt-antd": "link:..",
+    "react-scripts": "3.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
