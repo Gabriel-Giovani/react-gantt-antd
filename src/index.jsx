@@ -48,7 +48,7 @@ function Gantt({
       const end_date = getMonthAdd(start.getFullYear(), start.getMonth() + i + 1)
       v.push({
         id: `m${i}`,
-        title: `${(start.getMonth() + i) % 12 + 1}月`,
+        title: `${(start.getMonth() + i) % 12 + 1}`,
         start: start_date,
         end: end_date,
       })
