@@ -101,13 +101,13 @@ function Gantt({
     },
     {
       id: 'months',
-      title: '月份',
+      title: 'Meses',
       cells: buildMonthCells(),
 
     },
     {
       id: 'days',
-      title: '日期',
+      title: 'Dias',
       cells: buildDayCells(),
     }
   ]
