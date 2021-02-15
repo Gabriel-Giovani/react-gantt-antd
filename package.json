@@ -2,7 +2,7 @@
   "name": "react-gantt-antd",
   "version": "1.0.8",
   "description": "",
-  "main": "lib/index.js",
+  "main": "src/index.js",
   "scripts": {
     "clean": "rimraf lib coverage",
     "build:js": "babel src/ -d lib/",
