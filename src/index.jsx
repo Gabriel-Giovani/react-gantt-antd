@@ -101,7 +101,7 @@ function Gantt({
     },
     {
       id: 'months',
-      title: 'Meses',
+      title: 'Projetos',
       cells: buildMonthCells(),
 
     },
