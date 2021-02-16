@@ -15,7 +15,7 @@ const Cell = ({ title, start, end, style }) => {
   )
 }
 
-const Row = ({ cells, style }) => {
+const Row = ({ cells, style, id }) => {
   const { time } = useContext(globalContext)
   let props = {}
   if (time.timelineWidth / cells.length < 22) {
@@ -24,7 +24,7 @@ const Row = ({ cells, style }) => {
     }
   }
   return (
-    <div className="rt-timebar__row" style={style}>
+    <div className={`rt-timebar__row ${id}`} style={style}>
       {cells.map(cell => (
         <Cell key={cell.id} {...cell} {...props} />
       ))}
