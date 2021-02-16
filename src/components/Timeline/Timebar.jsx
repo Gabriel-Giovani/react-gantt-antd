@@ -18,7 +18,7 @@ const Cell = ({ title, start, end, style }) => {
 const Row = ({ id, title, cells, style }) => {
   const { time } = useContext(globalContext)
   let props = {}
-  if (time.timelineWidth / cells.length < 22) {
+  if (time.timelineWidth / cells.length < 30) {
     props = {
       title: ''
     }
