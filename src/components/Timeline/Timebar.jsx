@@ -5,7 +5,7 @@ import { globalContext } from '../../index'
 const Cell = ({ title, start, end, style }) => {
   const { time } = useContext(globalContext)
   return (
-    <div className="rt-timebar__cell" style={{
+    <div className={`rt-timebar__cell ${title}`} style={{
       height: '100%',
       ...time.toStyleLeftAndWidth(start, end),
       ...style

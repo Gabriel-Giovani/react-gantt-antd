@@ -35,9 +35,9 @@ describe('createTime', () => {
         start: newYear,
         end: newYearMidday,
         zoom: 1,
-        viewportWidth: 2000,
+        viewportWidth: 1000,
       })
-      expect(timelineWidth).toBe(2000)
+      expect(timelineWidth).toBe(1000)
     })
 
     it('minTimelineWidth ensures timelineWidth does not fall below minimum', () => {
