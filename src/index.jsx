@@ -11,7 +11,7 @@ function Gantt({
   projects = [],
   now = new Date(),
   sidebarWidth = 120,
-  minWidth = 400,
+  minWidth = 800,
   scrollToNow = true,
   enableSticky = true,
   clickTask,
